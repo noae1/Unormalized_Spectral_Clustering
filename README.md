@@ -32,7 +32,9 @@ In case of equality in the argmax of some eigengaps, use the lowest index.
 
 ### 1. spkmeans.py: Python interface
 - Reading user CMD arguments:
+
 (a) k  (only available in Python implementation)
+
 (b) goal - Can get the following values:
 [spk] (perform full spectral kmeans algorithm - only available in Python implementation), 
 [wam] (calculate and output the Weighted Adjacency Matrix),
