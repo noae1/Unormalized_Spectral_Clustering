@@ -66,11 +66,14 @@ if the goal=’spk’, the spk() method from the C module mykmeanssp is called, 
 • Case of ’spk’: The first line contains the indices of the observations chosen by the K-means++ algorithm as the initial centroids. 
 We refer to the first observation index as 0, the second as 1 and so on, up until N - 1. The second line onward contains the calculated final centroids from the K-means algorithm, separated by a comma, such
 that each centroid is in a line of its own.
+
 • Case of ’Jacobi’: The first line contains the eigenvalues, second line onward will be the corresponding eigenvectors (printed as columns).
+
 • Else: output the required matrix separated by a comma, such that each row is in a line of its own.
 
 ### From the C interface:
 • Case of ’Jacobi’: The first line contains the eigenvalues, second line onward will be the corresponding eigenvectors (printed as columns).
+
 • Else: output the required matrix separated by a comma, such that each row is in a line of its own.
 
 
