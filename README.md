@@ -31,22 +31,22 @@ In case of equality in the argmax of some eigengaps, use the lowest index.
 ## Description
 
 ### 1. spkmeans.py: c
-    - Reading user CMD arguments: 
-    (a) k  (only available in Python implementation)
-    (b) goal - Can get the following values: 
-      [spk] (perform full spectral kmeans algorithm - only available in Python implementation), 
-      [wam] (calculate and output the Weighted Adjacency Matrix),
-      [ddg] (calculate and output the Diagonal Degree Matrix), 
-      [gl] (calculate and output the Graph Laplacian), 
-      [jacobi] (calculate and output the eigenvalues and eigenvectors).
+- Reading user CMD arguments: 
+(a) k  (only available in Python implementation)
+(b) goal - Can get the following values: 
+[spk] (perform full spectral kmeans algorithm - only available in Python implementation), 
+[wam] (calculate and output the Weighted Adjacency Matrix),
+[ddg] (calculate and output the Diagonal Degree Matrix), 
+[gl] (calculate and output the Graph Laplacian), 
+[jacobi] (calculate and output the eigenvalues and eigenvectors).
 
-    (c) file_name (.txt): The path to the Input file, it will contain N data points for all above
-          goals except Jacobi, in case the goal is Jacobi the input is a symmetric matrix.
-      
-    - Implementation of the k-means++ initialization when the goal=spk. 
-      if the goal=’spk’, the spk() method from the C module mykmeanssp is called, with passing the initial centroids, the datapoints and other arguments. 
-    -  After getting the final centroids, they are printed as output.
-    -  For every other goal argument, the corresponding function from the C module mykmeanssp is called.
+(c) file_name (.txt): The path to the Input file, it will contain N data points for all above
+    goals except Jacobi, in case the goal is Jacobi the input is a symmetric matrix.
+
+- Implementation of the k-means++ initialization when the goal=spk. 
+if the goal=’spk’, the spk() method from the C module mykmeanssp is called, with passing the initial centroids, the datapoints and other arguments. 
+-  After getting the final centroids, they are printed as output.
+-  For every other goal argument, the corresponding function from the C module mykmeanssp is called.
     
 ### 3. spkmeans.h: C header file.
 ### 4. spkmeans.c: C interface  (same as detailed in the Python interface)
