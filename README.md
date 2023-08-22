@@ -79,9 +79,15 @@ that each centroid is in a line of its own.
 
 ## Compile and Running
 ## C
-Compile the C program using : ```make```.
-After successful compilation, the program can run for Example: ```./spkmeans gl input_1.txt``` .
+Compile the C program using : 
+```make```.
+
+After successful compilation, the program can run for Example: 
+```./spkmeans gl input_1.txt``` .
 
 ## Python
-Compile the extension using: ```python3 setup.py build_ext --inplace```.
-After successful compilation, the program can run for Example: ```python3 spkmeans.py 3 spk input_1.txt```.
+Compile the extension using: 
+```python3 setup.py build_ext --inplace```.
+
+After successful compilation, the program can run for Example: 
+```python3 spkmeans.py 3 spk input_1.txt```.
